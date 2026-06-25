@@ -1,7 +1,7 @@
 import {
   Activity,
   Boxes,
- ChartColumn,
+  ChartColumn,
   ClipboardList,
   LayoutDashboard,
   ShieldCheck,
@@ -9,45 +9,45 @@ import {
   Users,
 } from "lucide-react";
 
-export const navigation = [
+export const NAVIGATION = [
   {
     title: "Dashboard",
-    href: "/dashboard",
+    url: "/dashboard",
     icon: LayoutDashboard,
   },
   {
     title: "Checklists & Jobs",
-    href: "/checklists",
+    url: "/checklists",
     icon: ClipboardList,
   },
   {
     title: "Utilization",
-    href: "/utilization",
+    url: "/utilization",
     icon: ChartColumn,
   },
   {
     title: "Allotments",
-    href: "/allotments",
+    url: "/allotments",
     icon: Boxes,
   },
   {
     title: "Users",
-    href: "/users",
+    url: "/users",
     icon: Users,
   },
   {
     title: "Roles & Permissions",
-    href: "/roles",
+    url: "/roles",
     icon: ShieldCheck,
   },
   {
     title: "Sessions",
-    href: "/sessions",
+    url: "/sessions",
     icon: Activity,
   },
   {
     title: "My Account",
-    href: "/account",
+    url: "/account",
     icon: UserCircle2,
   },
 ] as const;
