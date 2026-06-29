@@ -1,10 +1,14 @@
 import {
   Activity,
   Boxes,
-  ChartColumn,
+  Building2,
   ClipboardList,
+  FileText,
   LayoutDashboard,
+  Package2,
+  Settings,
   ShieldCheck,
+  Truck,
   UserCircle2,
   Users,
 } from "lucide-react";
@@ -12,42 +16,67 @@ import {
 export const NAVIGATION = [
   {
     title: "Dashboard",
-    url: "/dashboard",
+    href: "/dashboard",
     icon: LayoutDashboard,
   },
   {
     title: "Checklists & Jobs",
-    url: "/checklists",
+    href: "/checklists",
     icon: ClipboardList,
   },
   {
-    title: "Utilization",
-    url: "/utilization",
-    icon: ChartColumn,
+    title: "Inventory",
+    href: "/inventory",
+    icon: Package2,
+  },
+  {
+    title: "Requests",
+    href: "/requests",
+    icon: FileText,
+  },
+  {
+    title: "Dispatches",
+    href: "/dispatches",
+    icon: Truck,
   },
   {
     title: "Allotments",
-    url: "/allotments",
+    href: "/allotments",
     icon: Boxes,
   },
   {
+    title: "Branches",
+    href: "/stores",
+    icon: Building2,
+  },
+  {
     title: "Users",
-    url: "/users",
+    href: "/users",
     icon: Users,
   },
   {
     title: "Roles & Permissions",
-    url: "/roles",
+    href: "/roles",
     icon: ShieldCheck,
   },
   {
     title: "Sessions",
-    url: "/sessions",
+    href: "/sessions",
     icon: Activity,
   },
   {
+    title: "Reports",
+    href: "/reports",
+    icon: FileText,
+  },
+  {
+    title: "Settings",
+    href: "/settings",
+    icon: Settings,
+  },
+  {
     title: "My Account",
-    url: "/account",
+    href: "/account",
     icon: UserCircle2,
   },
 ] as const;

@@ -7,7 +7,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
+  --font-sans: var(--font-geist);
+  --font-mono: var(--font-geist-mono);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -125,6 +126,44 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    font-family: var(--font-geist);
   }
+}
+
+/* :root {
+  --primary: oklch(0.45 0.15 162);
+  --primary-foreground: oklch(0.985 0 0);
+  --ring: oklch(0.45 0.15 162);
+} */
+
+:root {
+  --background: oklch(0.97 0.01 85);
+  --foreground: oklch(0.22 0.02 20);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.02 20);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.02 20);
+
+  /* Talla Maroon */
+  --primary: oklch(0.36 0.16 358);
+  --primary-foreground: oklch(0.98 0 0);
+
+  /* Soft Beige */
+  --secondary: oklch(0.95 0.02 80);
+  --secondary-foreground: oklch(0.25 0.02 20);
+
+  --muted: oklch(0.95 0.02 80);
+  --muted-foreground: oklch(0.5 0.02 20);
+
+  --accent: oklch(0.93 0.03 80);
+  --accent-foreground: oklch(0.25 0.02 20);
+
+  --border: oklch(0.9 0.02 80);
+  --input: oklch(0.9 0.02 80);
+
+  --ring: oklch(0.36 0.16 358);
+
+  --radius: 0.75rem;
 }

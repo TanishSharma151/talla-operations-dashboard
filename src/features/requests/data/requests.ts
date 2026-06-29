@@ -1,0 +1,172 @@
+import { InventoryRequest } from "../types";
+
+export const requests: InventoryRequest[] = [
+  {
+    id: "1",
+    requestNumber: "RQ-1001",
+    branch: "Gandhi Nagar",
+    requestedBy: "Rahul Sharma",
+    requestedOn: "27 Jun 2026",
+    status: "Pending",
+    remarks: "Pantry stock running low.",
+    items: [
+      {
+        id: "1",
+        inventoryItem: "Coffee Beans",
+        quantity: 5,
+        unit: "kg",
+      },
+      {
+        id: "2",
+        inventoryItem: "Sugar",
+        quantity: 10,
+        unit: "kg",
+      },
+      {
+        id: "3",
+        inventoryItem: "Tea Bags",
+        quantity: 8,
+        unit: "boxes",
+      },
+    ],
+  },
+  {
+    id: "2",
+    requestNumber: "RQ-1002",
+    branch: "Janipur",
+    requestedBy: "Aman Singh",
+    requestedOn: "26 Jun 2026",
+    status: "Approved",
+    remarks: "Monthly office supplies.",
+    items: [
+      {
+        id: "4",
+        inventoryItem: "Printer Paper",
+        quantity: 15,
+        unit: "packs",
+      },
+      {
+        id: "5",
+        inventoryItem: "Pens",
+        quantity: 50,
+        unit: "pcs",
+      },
+      {
+        id: "6",
+        inventoryItem: "Markers",
+        quantity: 10,
+        unit: "pcs",
+      },
+    ],
+  },
+  {
+    id: "3",
+    requestNumber: "RQ-1003",
+    branch: "Kathua",
+    requestedBy: "Neha Gupta",
+    requestedOn: "25 Jun 2026",
+    status: "Dispatched",
+    remarks: "Housekeeping replenishment.",
+    items: [
+      {
+        id: "7",
+        inventoryItem: "Phenyl",
+        quantity: 8,
+        unit: "bottles",
+      },
+      {
+        id: "8",
+        inventoryItem: "Hand Wash",
+        quantity: 12,
+        unit: "bottles",
+      },
+      {
+        id: "9",
+        inventoryItem: "Toilet Cleaner",
+        quantity: 6,
+        unit: "bottles",
+      },
+    ],
+  },
+  {
+    id: "4",
+    requestNumber: "RQ-1004",
+    branch: "Akhnoor",
+    requestedBy: "Priya Kapoor",
+    requestedOn: "24 Jun 2026",
+    status: "Delivered",
+    remarks: "Packaging materials.",
+    items: [
+      {
+        id: "10",
+        inventoryItem: "Bubble Wrap",
+        quantity: 20,
+        unit: "rolls",
+      },
+      {
+        id: "11",
+        inventoryItem: "Packing Tape",
+        quantity: 30,
+        unit: "rolls",
+      },
+      {
+        id: "12",
+        inventoryItem: "Carton Boxes",
+        quantity: 50,
+        unit: "pcs",
+      },
+    ],
+  },
+  {
+    id: "5",
+    requestNumber: "RQ-1005",
+    branch: "Udhampur",
+    requestedBy: "Karan Mehta",
+    requestedOn: "23 Jun 2026",
+    status: "Partially Approved",
+    remarks: "Insufficient stock for complete fulfillment.",
+    items: [
+      {
+        id: "13",
+        inventoryItem: "Coffee Beans",
+        quantity: 8,
+        unit: "kg",
+      },
+      {
+        id: "14",
+        inventoryItem: "Printer Paper",
+        quantity: 25,
+        unit: "packs",
+      },
+      {
+        id: "15",
+        inventoryItem: "Sugar",
+        quantity: 15,
+        unit: "kg", 
+      },
+    ],
+  },
+  {
+    id: "6",
+    requestNumber: "RQ-1006",
+    branch: "Lakhdta Bazaar",
+    requestedBy: "Simran Kour",
+    requestedOn: "22 Jun 2026",
+    status: "Rejected",
+    remarks: "Duplicate request submitted.",
+    items: [
+      {
+        id: "16",
+        inventoryItem: "Tea Bags",
+        quantity: 6,
+        unit: "boxes",
+      },
+      {
+        id: "17",
+        inventoryItem: "Disposable Cups",
+        quantity: 20,
+        unit: "packs",
+      },
+    ],
+  },
+];

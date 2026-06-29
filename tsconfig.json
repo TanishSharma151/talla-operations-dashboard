@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/features/consumables/data/consumables.tss"  ],
   "exclude": ["node_modules"]
 }
